@@ -31,7 +31,7 @@ cd python/
 pip install .
 ```
 
-Since this repository uses jupyter notebook, install the corresponding banana-navigation kernel:
+Since this repository uses jupyter notebook, install the corresponding tennis kernel:
 
 ```
 python -m ipykernel install --user --name tennis --display-name "tennis"
