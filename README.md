@@ -10,6 +10,12 @@ The task is episodic, and in order to solve the environment, the agents must get
 
 The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
+
+<p align="center">
+<img src="pics/tennis.gif" width="400" height=250>
+<!--img src="pics/untrained.gif" width="300" height=250-->
+</p>
+
 ## Installing dependencies
 
 The recommended way of using this repository is through Anaconda.
