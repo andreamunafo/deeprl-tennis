@@ -40,5 +40,7 @@ Finally, in jupyter notebook, before running the code, make sure that the approp
 
 ## How to run it
 
-Run one of the *.ipynb notebooks.
+Run `deep-tennis`.ipynb notebooks.
+
+(notebook `tennis-separate-actor-critic.ipynb` has a slightly different implementation).
 
