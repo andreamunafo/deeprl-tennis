@@ -27,7 +27,7 @@ self.fc2 = nn.Linear(fc1, fc2)
 self.fc3 = nn.Linear(fc2, action_size)
 ```
 
-where state_size=24 (Each observes a state with length 24), fc1=512, fc2=256, action_size=2.
+where state_size=24 (each agent observes a state with length 24), fc1=512, fc2=256, action_size=2.
 Each linear layer is followed by a `ReLU` activation function, except for the last one which uses a `tanh` to constrain the action values to the correct range.
 Each agent implements its own Actor network.
 
