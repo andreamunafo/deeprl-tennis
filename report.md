@@ -54,6 +54,7 @@ WEIGHT_DECAY = 0        # L2 weight decay
 The environment is solved in 391 episodes, with an average score of 0.5 over 100 episodes.
 
 The picture below reports the scores (only those >0) obtained per episode (in red) and the rolling average over the last 100 episodes.
+
 ![scores](pics/scores.png)
 
 The last 100 episodes are reported in the picture below:
