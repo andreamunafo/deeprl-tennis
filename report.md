@@ -16,7 +16,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 Traditional reinforcement learning approaches such as Q-Learning or policy gradient are poorly suited to multi-agent environments due to the environment becoming non-stationary from the perspective of any individual agent. This means that the environment changes in a way that is not explainable by changes in the agent’s own policy, leading to learning instability.
 
 To solve this environment, this work uses the approach proposed in [Lowe et al, Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf), and adopts a centralized training with decentralized execution, allowing the policies to use extra information to ease training, as long as this information is not used at test time.
-To this, following [Lowe et al, Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf) a simple extension of actor-critic policy gradient methods is done, where the critic is augmented with extra information about the policies of other agents, while the actor only has access to local information. After training is completed, only the local actors are used at execution phase, acting in a decentralized manner and equally applicable in cooperative and competitive settings.
+To do this, following [Lowe et al, Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments](https://arxiv.org/pdf/1706.02275.pdf), this work implements a simple extension to the actor-critic policy gradient method, where the critic is augmented with extra information about the policies of other agents, while the actor only has access to local information. After training is completed, only the local actors are used at execution phase, acting in a decentralized manner and equally applicable in cooperative and competitive settings.
 
 
 In this implementation, the actor network is implemented through a simple network:
@@ -53,7 +53,7 @@ WEIGHT_DECAY = 0        # L2 weight decay
 
 The environment is solved in 391 episodes, with an average score of 0.5 over 100 episodes.
 
-The picture below reports the scores obtain per episode (in red) and the rolling average over the last 100 episodes.
+The picture below reports the scores (only those >0) obtained per episode (in red) and the rolling average over the last 100 episodes.
 ![scores](pics/scores.png)
 
 The last 100 episodes are reported in the picture below:
